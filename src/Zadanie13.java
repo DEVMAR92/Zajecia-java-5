@@ -4,8 +4,8 @@ public class Zadanie13 {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-        int i = 0;
-        while (i != 1) {
+
+        while (true) {
             System.out.println("Podaj liczbę");
             double userInput = scan.nextDouble();
             if (userInput < 100) {
@@ -21,6 +21,6 @@ public class Zadanie13 {
                 }
             }
         }
-
+        scan.close();
     }
 }
