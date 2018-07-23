@@ -12,10 +12,15 @@ public class Zadanie14 {
             names[j] = input.nextLine();
         }
 
-        for (int i = names.length - 1; i <= names.length; i--) {
-            System.out.println("Cześć " + names[i]);
-            if (i == 0) break;
+        int lenght = names.length;
+
+        while (lenght > 0) {
+            System.out.println("Cześć " + names[lenght - 1]);
+            lenght--;
+
         }
+
+
         input.close();
     }
 }
